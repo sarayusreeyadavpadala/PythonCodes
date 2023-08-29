@@ -1,2 +1,2 @@
 # PythonCodes
-These are beginner friendly python programs.
+These are beginner friendly Python Programs.
