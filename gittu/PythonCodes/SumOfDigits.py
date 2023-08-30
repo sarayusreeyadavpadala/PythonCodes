@@ -9,11 +9,7 @@ def get_integer():
             num = int(num)                        # converting integer string to integer. And returns it to where function is called.
             return num
         else:
-            print("enter integer only")                    
-            if (i-1)<=1:                                   # if user entered wrong input, it displays a message and chances left.
-                print(f'{i-1} chance is left')             
-            else:
-                print(f'{i-1} chances are left')
+            print(f'{i-1} chance is left' if (i-1)<2 else f'{i-1} chances are left')   # printing no of chances left
 
         continue   
 
