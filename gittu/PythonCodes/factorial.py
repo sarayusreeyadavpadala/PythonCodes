@@ -1,18 +1,24 @@
+
+"""This Python code calculates the factorial of a number given by the user."""
+
 import sys
 
+
 def Factorial(num):
-    mul=1
+"""This function calculates the factorial of a number."""
+    mul = 1
     for i in range(0,num):
-        if num == 0:
+        if num == 0: #If the input which was given by the user is Zero,It returns One.
             return 1
         else:
-            mul = mul*(num-i)
+            mul = mul*(num-i) #Else it will calculate the factorial of the number.
     return mul
     
 def get_input():
+"""This function gets an integer input from the user.If it was not an integer it gives three chances to the user to give a right input."""
     for i in range(3,0,-1):                      
         num = input("enter a number:")
-        if num.isnumeric():                    
+        if num.isnumeric():  #checks if input is numeric using .isnumeric().                 
             num = int(num)                      
             return num
         else:
