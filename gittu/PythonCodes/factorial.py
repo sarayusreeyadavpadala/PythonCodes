@@ -5,7 +5,8 @@ import sys
 
 
 def Factorial(num):
-"""This function calculates the factorial of a number."""
+    """This function calculates the factorial of a number."""
+
     mul = 1
     for i in range(0,num):
         if num == 0: #If the input which was given by the user is Zero,It returns One.
@@ -15,7 +16,8 @@ def Factorial(num):
     return mul
     
 def get_input():
-"""This function gets an integer input from the user.If it was not an integer it gives three chances to the user to give a right input."""
+    """This function gets an integer input from the user.If it was not an integer it gives three chances to the user to give a right input."""
+
     for i in range(3,0,-1):                      
         num = input("enter a number:")
         if num.isnumeric():  #checks if input is numeric using .isnumeric().                 
@@ -27,6 +29,8 @@ def get_input():
         continue   
 
 if __name__ == '__main__':
+    """ This function is used to overcome the problem while importing this file """
+
     num = get_input()
     if type(num) is type(None):               
         print("Try again!")
