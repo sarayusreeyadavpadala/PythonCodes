@@ -3,6 +3,9 @@
 import sys
 
 def get_integer():
+    """ This function asks the user to give the input. It gives 3 chances until user enter the correct
+    number """
+
     for i in range(3,0,-1):                       # executes the loop 3 times. Giving 3 chances to the user.
         num = input("enter a number:")
         if num.isnumeric():                       # checks if entered input is an integer string or not.
@@ -15,6 +18,8 @@ def get_integer():
 
 
 def addition(num):
+    """ This function performs addition. If user enters wrong value, program exits """
+
     Sum=0
     if type(num) is type(None):               # Checks if number type is none or not. If type is none program exits.
         print("Try again!")
@@ -28,7 +33,9 @@ def addition(num):
 
 
 
-if __name__ == '__main__':                    # this is used to overcome the problems while importing this file.                         
+if __name__ == '__main__':                    
+    """ This function is used to overcome the problems while importing this file """                        
     number = get_integer()
     Sum = addition(number)
-    print(f'Sum of digits of {number} is {Sum}')      # Prints the sum 
+    print(f'Sum of digits of {number} is {Sum}')      # Prints the sum
+
